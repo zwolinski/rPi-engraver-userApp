@@ -1,0 +1,23 @@
+﻿<Window x:Class="Progowanie.rPi"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Progowanie"
+        mc:Ignorable="d"
+        Title="Podsumowanie" Height="356.805" Width="505.681">
+    <Grid>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="216" VerticalAlignment="Top" Width="178" Source="img/rPiLogo.png" Margin="0,10,0,0"/>
+        <Label x:Name="label" Content="Ścieżka do G-Code:" HorizontalAlignment="Left" Margin="183,52,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="gcPath" Content="" HorizontalAlignment="Left" Margin="183,78,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label x:Name="label1" Content="Przewidywany czas pracy:" HorizontalAlignment="Left" Margin="183,104,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="expTime" Content="" HorizontalAlignment="Left" Margin="183,130,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Button x:Name="startBtn" Content="Start" HorizontalAlignment="Left" Margin="333,164,0,0" VerticalAlignment="Top" Width="103" Height="40" FontSize="28" FontWeight="Bold" Background="#FF31B413" Foreground="Black" Click="startBtn_Click"/>
+        <ScrollViewer x:Name="scrl" HorizontalAlignment="Left" Height="100" Margin="183,169,0,0" VerticalAlignment="Top" Width="100" Visibility="Hidden">
+            <TextBlock x:Name="textBlock" TextWrapping="Wrap" Text=""/>
+        </ScrollViewer>
+        <Label x:Name="label2" Content="Wymiary obrazu:" HorizontalAlignment="Left" Margin="183,0,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="wymiaryLb" Content="" HorizontalAlignment="Left" Margin="183,26,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+
+    </Grid>
+</Window>
